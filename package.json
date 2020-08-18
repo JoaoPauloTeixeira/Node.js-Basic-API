@@ -19,13 +19,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoaoPauloTeixeira/Node.js-Criando-API.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API/issues"
-  },
-  "homepage": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API#readme"
+    "url": "git+https://github.com/JoaoPauloTeixeira/Node.js-Criando-API.git",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node ./bin/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API/issues"
+    },
+    "homepage": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API#readme",
+    "dependencies": {
+      "debug": "^4.1.1",
+      "express": "^4.17.1",
+      "http": "0.0.1-security"
+    },
+    "devDependencies": {}
+  }
 }

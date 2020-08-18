@@ -5,8 +5,10 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const config = require('./config');
 
+
 const app = express();
 const router = express.Router();
+
 
 mongoose.connect('mongodb+srv://nodejp:83shkv3Su2HYBLCD@nodeapi.0ac5x.azure.mongodb.net/<dbname>?retryWrites=true&w=majority', () => {
     useNewUrlParser: true
@@ -36,5 +38,15 @@ app.use('/', indexRoute);
 app.use('/products', productRoute);
 app.use('/customers', customerRoute);
 app.use('/customers', orderRoute);
+
+//CONFIGURANDO ROTA
+const route = router.get('/', (req, res, next) => {
+    res.status(200).send({
+        title: "Node Store API",
+        version: "0.0.1"
+    });
+});
+app.use('/', route);
+
 
 module.exports = app;

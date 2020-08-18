@@ -1,0 +1,31 @@
+{
+  "name": "node-str",
+  "version": "1.0.0",
+  "description": "Criando API' completa utilizando Node.js",
+  "main": "./bin/server.js",
+  "bin": {
+    "node-str": "server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "guid": "0.0.12",
+    "mongoose": "^5.9.28",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon .bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoPauloTeixeira/Node.js-Criando-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API/issues"
+  },
+  "homepage": "https://github.com/JoaoPauloTeixeira/Node.js-Criando-API#readme"
+}
